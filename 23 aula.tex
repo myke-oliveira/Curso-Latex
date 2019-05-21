@@ -14,6 +14,9 @@
 \usepackage[normalem]{ulem}
 \useunder{\uline}{\ul}{}
 
+% Modo matemático
+\usepackage{amsmath}
+
 \begin{document}
 	\title{\textbf{{\Huge Capa e Sumário}}}
 	\author{Myke Albuquerque Pinto de Oliveira}
@@ -210,4 +213,51 @@
 	Quisque ut dolor at enim ullamcorper tristique malesuada eget dolor. Phasellus non mauris posuere, sodales nisl eu, luctus elit. Nulla venenatis porttitor venenatis. In id feugiat ligula, ut sagittis lorem. Etiam vulputate neque urna, id lacinia lorem vehicula vitae. Nulla vehicula ipsum sit amet vestibulum feugiat. Phasellus iaculis efficitur lacus id cursus. Suspendisse mi ex, volutpat vitae ultrices eget, suscipit et felis. Vestibulum eget diam ac urna iaculis maximus at at quam. In in varius tellus. Integer vel erat vitae quam ornare scelerisque in ac magna. Vestibulum tempus, felis vel ultricies fermentum, sem tortor commodo mi, condimentum pretium erat purus eu massa. Cras tempor enim quis sapien vulputate sagittis.
 	
 	Morbi nisi nisi, commodo ac nunc non, condimentum vehicula ipsum. Sed laoreet, magna quis venenatis euismod, purus sem commodo leo, nec auctor nunc sapien sit amet erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ac congue tellus. In id aliquet erat. Maecenas et odio pellentesque, viverra urna eu, egestas massa. Phasellus hendrerit pharetra pulvinar. Nullam venenatis ante non cursus posuere. Aliquam cursus metus quis feugiat sodales. Mauris ac consequat metus. Morbi mollis ac augue et commodo. Cras tempus tellus gravida consequat scelerisque. Vestibulum sit amet dolor in dui vulputate facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vitae volutpat diam.
+	
+	\section{Modo Matemático}
+	
+	Esta é a equação de segundo grau: $ ax^2 + bx + c = 0 $. A solução é:
+	
+	\begin{equation}
+		x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+	\end{equation}
+	
+	\begin{equation*}
+	\begin{array}{cc}
+	x_1 = \dfrac{-b - \sqrt{b^2-4ac}}{2a}, & x_2 = \dfrac{-b + \sqrt{b^2-4ac}}{2a}
+	\end{array} 
+	\end{equation*}
+	
+	Teorema de pitágoras
+	
+	\begin{equation*}
+		a^2=b^2+c^2
+	\end{equation*}
+	
+	Teorema de Fermat
+	
+	\begin{equation}
+	a^n=b^n+c^n
+	\end{equation}
+	
+	\begin{equation*}
+		A = \begin{pmatrix}
+		1 & 0 & 0 \\ 
+		0 & 1 & 0 \\ 
+		0 & 0 & 1
+		\end{pmatrix} 
+	\end{equation*}
+	
+	\section{Traduzindo comandos}
+	\renewcommand{\sin}{\mathrm{sen\hspace{0.5}}}
+	\renewcommand{\tan}{\mathrm{tg\hspace{0.5}}}
+	
+	\begin{equation}
+		\sin 2x
+	\end{equation}
+	\begin{equation}
+		\cos 2x
+	\end{equation}
+	
+	\section{Boas práticas}
 \end{document}
